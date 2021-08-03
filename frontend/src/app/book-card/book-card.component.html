@@ -1,0 +1,16 @@
+<div class="col">
+    <div routerLink="/book-detail">
+        <div class="card">
+            <img [src]="book.cover_picture"
+                class="card-img-top" [alt]="book.name">
+            <div class="card-body">
+                <h5 class="card-title">{{ book.name}}</h5>
+                <p class="card-text">
+                    <small class="text-muted">{{ book.author }}</small><br>
+                    <small class="text-muted">{{ book.category}}</small>
+                </p>
+            </div>
+        </div>    
+    </div>
+</div>
+

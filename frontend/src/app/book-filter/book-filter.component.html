@@ -1,0 +1,23 @@
+<div class="pt-5">
+    <div class="row g-3">
+        <form action="">
+            <div class="col-md-5">
+                <input type="search" 
+                    class="form-control" 
+                    placeholder="Procure por um livro"
+                    (keyup)="debounce.next(value)"
+                    [value]="value">
+            </div>
+            <div class="col-md-3 ms-auto">
+                <select class="form-select" aria-label="Filtros">
+                    <option selected>Filtros</option>
+                    <option value="1">Melhores Avaliados</option>
+                    <option value="2">Em estoque</option>
+                    <option value="3">Ordem Alfabética</option>
+                    <option value="4">Livros curtidos</option>
+                    <option value="5">Por categoria</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</div>

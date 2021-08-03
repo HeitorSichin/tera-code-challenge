@@ -1,0 +1,11 @@
+<div class="pe-5 ps-5" style="background-color: #f1ffff;">
+    <app-book-filter (onTyping)="searchValue = $event" [value]="searchValue"></app-book-filter>
+
+    <div class="container pt-5 pb-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <ng-container *ngFor="let book of books | searchFilter: searchValue">
+                <app-book-card [book]="book"></app-book-card>
+            </ng-container>
+        </div>
+    </div>
+</div>
